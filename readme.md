@@ -418,6 +418,8 @@ devices under a variety of operating systems.
 
 * [DNSMasq conversion script](https://gist.github.com/erlepereira/c11f4f7a3f60cd2071e79018e895fc8a#file-dnsmasq-antimalware) This github gist has a short shell script (bash, will work on any 'nix) and uses 'wget' & 'awk' present in most distros, to fetch a specified hosts file and convert it the format required by dnsmasq. Supports ipv4 and ipv6. Designed to be used as either a shell script, or can be dropped into /etc/cron.weekly (or wherever suits). Script is short and easily edited, also has a short document attached with notes on dnsmasq setup.
 
+* [Nebulo DoH/DoT app for Android](https://git.frostnerd.com/PublicAndroidApps/smokescreen) This app for the Android platform implements dns-over-https and dns-over-tls systemwide to encrypt all dns traffic. It uses a dummy VPN for intercepting and forwarding dns queries and thus doesn't require root but cannot be used in conjunction with a real VPN. It is free from tracking or ads and has a feature called "Dns rules" which can import domains blocked by this host file. Versions of this app from outside the playstore (for example from their [custom F-Droid repository](https://fdroid.frostnerd.com/repo/?fingerprint=74BB580F263EC89E15C207298DEC861B5069517550FE0F1D852F16FA611D2D26)) contain this hosts file as a default source.
+
 ## Contribute!
 
 Please read our [Contributing Guide](https://github.com/StevenBlack/hosts/blob/master/contributing.md). Among other things, this explains how we organize files and folders in this repository.
